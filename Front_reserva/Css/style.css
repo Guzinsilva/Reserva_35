@@ -95,6 +95,26 @@ body {
     margin: 30px 30px;
  }
 
+ .carrosel {
+   box-shadow: 2px 2px 4px #000000;
+   overflow: hidden;
+   height: 400px;
+   width: 650px;
+   align-items: center;
+
+ }
+ .container-catalogo {
+   display: flex;
+   transition: transform 0.7s ease-in-out;
+   transform: translateX(0);
+ }
+
+img{
+   object-fit: cover;
+   width: 650px;
+   height: 400px;
+ }
+
  /*////////////////////// Eventos ///////////////////////*/
 
  .eventos {
@@ -114,7 +134,8 @@ body {
  .informacoes {
     font-family: "Jura", sans-serif;
     font-size: 30px;
-    color: #ffffff;
+    color: #ffffff; 
+    grid-column: 1;     
  }
 
 /*////////////////////// Clube ///////////////////////*/
