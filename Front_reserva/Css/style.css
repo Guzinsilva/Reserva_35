@@ -1,3 +1,38 @@
+/*////////////////////// Fontes ///////////////////////*/
+.denk-one-regular {
+    font-family: "Denk One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 300 to 700 */
+  
+.jura-regular {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: thin;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+body {
+    background-color: #1C1C1C;
+}
+
+/*////////////////////// Banner ///////////////////////*/
+
 .inicio {
     display: flex;
     flex-direction: column;
@@ -7,22 +42,143 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 2000px;
-    
+    margin-bottom: 60px;
 }
-* {
-    margin: 0;
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
  .botao-generico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #DCAA05;
     color: #ffffff;
-    position: relative;
-    top: 500px;
-    width: 200px;
-    height: 25px;
-    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
     border: #DCAA05 solid 1px;
     text-decoration: none;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    
+    font-family: "Inter", sans-serif;
+    transition: 0.3s;
+}
+
+.botao-generico:hover {
+    background-color: #ffffff;
+    color: #DCAA05;
+}
+
+/*////////////////////// Catalago ///////////////////////*/
+
+ .catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
  }
+
+ .titulo {
+    font-family: "Denk One", sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+ }
+
+ .linha {
+    height: 5px;
+    width: 700px;
+    background-color: #DCAA05;
+    margin: 30px 30px;
+ }
+
+ /*////////////////////// Eventos ///////////////////////*/
+
+ .eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .eventos-grid {
+    display: grid;
+    grid-template-columns: 250px 500px;
+    gap: 40px;
+    margin: 80px 0;
+ }
+
+
+ .informacoes {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+ }
+
+/*////////////////////// Clube ///////////////////////*/
+
+ .clube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .clube-grid {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    gap: 40px;
+    margin: 80px 0;
+ }
+
+ .botao-clube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEB5BF;
+    width: 200px;
+    height: 35px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+    grid-column: 1;
+    transition: 0.3s;
+ }
+
+ .botao-clube:hover {
+    background-color: #ffffff;
+ }
+
+ /*////////////////////// Localização ///////////////////////*/
+
+ .localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .localizacao-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 40px;
+    margin: 80px 0;
+ }
+
+ /*////////////////////// Rodapé ///////////////////////*/
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+ }
+
+ .texto-footer {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    margin: 50px 10px;
+ }
+
